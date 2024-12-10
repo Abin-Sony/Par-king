@@ -38,7 +38,7 @@ function Header() {
                             <Link onClick={openModal} style={{ cursor: 'pointer',textDecoration:'none' }} ><h2 className='ms-md-5 text-white'>How it works</h2></Link>
                         </Nav>
 
-                        <button className='btn btn-success rounded p-2 ms-md-5 text-white'>Sign Out</button>
+                        <button className='btn btn-light rounded p-2 ms-md-5 text-dark'>Sign Out</button>
                      
                     </Navbar.Collapse>
                    
