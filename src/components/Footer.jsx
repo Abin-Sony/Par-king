@@ -32,7 +32,7 @@ function Footer() {
 
             <div className="col-md-4 px-md-5 mt-4 mt-md-0">
                 <h4 className='text-danger '>Contact Us</h4>
-                <div className='d-flex mt-3 shaddow'>
+                <div className='d-flex mt-3 shadow'>
                     <input type="text" placeholder='Email Id'
                     className='form-control' />
                     <button className='btn btn-danger ms-3'>Subscribe</button>
