@@ -26,7 +26,7 @@ function Header() {
                 
                 <Container>
                     <Navbar.Brand>
-                    <Link to={'/'} style={{textDecoration:'none'}} > <h1 className='text-dark'> <img src='https://pngimg.com/uploads/letter_p/letter_p_PNG28.png' style={{width:"50px", height:"55px"}} className='me-3'/>PAR-KING</h1> </Link>
+                     <h1 className='text-dark'> <img src='https://pngimg.com/uploads/letter_p/letter_p_PNG28.png' style={{width:"50px", height:"55px"}} className='me-3'/>PAR-KING</h1> 
                     </Navbar.Brand>
 
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
