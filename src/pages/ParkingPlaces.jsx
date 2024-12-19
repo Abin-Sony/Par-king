@@ -8,21 +8,21 @@ const ParkingPlace = () => {
             id: 1,
             name: "LuLu International Shopping Mall,Kochi",
           
-            bookingLink: "",
+           
             image: "https://www.homesindiamagazine.com/uploaded_images/newstransfer/r4z3jjfx1u645645.jpg", 
         },
         {
             id: 2,
             name: "Center Square Mall,Kochi",
 
-            bookingLink: "",
+           
             image: "https://onlyinyourstate.in/wp-content/uploads/2018/07/Centre-Square-Mall-Kochi.jpg", 
         },
         {
             id: 3,
             name: "Forum Mall, Kochi",
 
-            bookingLink: "",
+           
             image: "https://storage.googleapis.com/realtyplusmag-news-photo/news-photo/111880.Prestige-Group-Debuts-In-Kerala-With-Mall-%E2%80%98Forum-Kochi%E2%80%99-In-Maradu.JPG", 
         },
     ];
