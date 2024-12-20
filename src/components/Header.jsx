@@ -33,7 +33,7 @@ function Header() {
                             <Link onClick={handleShow} style={{ cursor: 'pointer',textDecoration:'none' }} ><h2 className='ms-md-5 text-white'>How it works</h2></Link>
                         </Nav>
 
-                        <button className='btn btn-light rounded p-2 ms-md-5 text-dark'>Sign Out</button>
+                       <Link to={'/'}> <button className='btn btn-light rounded p-2 ms-md-5 text-dark'>Sign Out</button></Link>
                      
                     </Navbar.Collapse>
                    
