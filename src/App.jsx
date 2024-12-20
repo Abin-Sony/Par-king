@@ -9,10 +9,8 @@ import BookingForm from './pages/BookingForm'
 import ParkingPlace from './pages/ParkingPlaces'
 import Booking from './pages/Booking'
 
-
 function App() {
   
-
   return (
     <>
     <Routes>

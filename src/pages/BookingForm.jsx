@@ -68,7 +68,6 @@ function BookingForm() {
                                             <input type="datetime-local" className='form-control mt-2' onChange={(e)=>setBookingDetails({...bookingDetails, exitTime:e.target.value})} />
                                     </div>
                                    
-        
                                     <div className='mb-3'>
                                         <button className='btn btn-danger shadow  text-white w-100 mt-2' onClick={handleSubmit}>Confirm Booking</button>
                                     </div>

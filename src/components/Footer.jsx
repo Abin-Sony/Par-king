@@ -14,8 +14,6 @@ function Footer() {
                         <p style={{ textAlign: 'justify' }} className='mt-3 text-dark'>Par-King allows individuals to secure a parking spot in advance at a chosen location and time. This convenient service eliminates the stress of searching for parking upon arrival, ensuring a hassle-free experience..</p>
                     </div>
 
-
-
                     <div className="col-md-2 d-md-flex justify-content-center mt-4 mt-md-0">
                         <div>
                             <h4 className='text-light'>Link</h4>

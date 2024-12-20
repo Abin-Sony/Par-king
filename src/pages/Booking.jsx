@@ -19,7 +19,6 @@ function Booking() {
         <Header/>
             <h1 className='text-center my-5 text-danger'>YOUR BOOKINGS</h1>
 
-
             <div className="container mb-5 d-none d-md-block">
                 <div className='p-3'>
                     <table className='border w-100'>
