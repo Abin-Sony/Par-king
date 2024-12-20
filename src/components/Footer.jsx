@@ -17,7 +17,7 @@ function Footer() {
                     <div className="col-md-2 d-md-flex justify-content-center mt-4 mt-md-0">
                         <div>
                             <h4 className='text-light'>Link</h4>
-                            <Link to={'/Login'} style={{textDecoration:'none'}}> <p className='mt-3 text-dark'>Login page</p></Link>
+                            <Link to={'/signup'} style={{textDecoration:'none'}}> <p className='mt-3 text-dark'>Registration page</p></Link>
                             <Link to={'/ParkingPlace'} style={{textDecoration:'none'}}> <p className='text-dark'>Parking place</p></Link>
                             <Link to={'/BookingForm'} style={{textDecoration:'none'}}>  <p className='text-dark'>Booking Form</p></Link>
                         </div>

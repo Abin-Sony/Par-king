@@ -13,7 +13,7 @@ function Home() {
              
           <div className="col-md-4"></div>
           <div className="col-md-4">
-          <Link to={'/login'}><button className='btn btn-danger rounded shadow w-100 mt-5 mb-4'>CLICK HERE</button></Link>
+          <Link to={'/signup'}><button className='btn btn-danger rounded shadow w-100 mt-5 mb-4'>CLICK HERE</button></Link>
           </div>
           <div className="col-md-4"></div>
   

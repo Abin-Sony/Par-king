@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 function Signup() {
 
@@ -8,9 +8,12 @@ function Signup() {
   const [mobile, mobilechange] = useState("");
   const [vehicle, vehiclechange] = useState("");
   const [password, passwordchange] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate= useNavigate()
 
   const handlesubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true)
     let signupobj = { name, email, mobile, vehicle, password };
     //console.log(signupobj);
 
@@ -29,6 +32,8 @@ function Signup() {
       if (response.ok) {
         // Display success alert
         alert(data.message || 'Signup successful!');
+        navigate('/ParkingPlace')
+
       } else {
         // Display error alert
         alert(data.message || 'Signup failed. Please try again.');
@@ -38,9 +43,6 @@ function Signup() {
       alert('An error occurred. Please try again later.');
       console.error('Error during signup:', error);
     }
-
-
-
 
   }
 
@@ -52,7 +54,7 @@ function Signup() {
       </div>
 
       <div className="row">
-        <h3 className='text-center mt-3 fw-bold text-danger'>SIGNUP</h3>
+        <h3 className='text-center mt-3 fw-bold text-danger'>REGISTRATION FORM</h3>
         <div className="col-md-4"></div>
 
         <div className="col-md-4">
@@ -99,14 +101,9 @@ function Signup() {
                 placeholder='password' className='form-control mt-1' />
             </div>
 
-            <button type='submit' className='btn btn-danger rounded w-100 shadow mt-2 mb-3'>CREATE ACCOUNT</button>
+            <button type='submit' className='btn btn-danger rounded w-100 shadow mt-2 mb-3' disabled={isSubmitting}>CREATE ACCOUNT</button>
 
 
-            <div className='d-flex flex-column align-items-center justify-content-center'>
-              <a href=""><h5 className=' mt-4'>ALREADY HAVE AN ACCOUNT ?</h5></a>
-              <Link to={'/login'}><button className='btn btn-primary' type='submit'>LOGIN</button></Link>
-
-            </div>
           </form>
 
         </div>

@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { addBookingDetailApi } from '../services/allApi'
 import Header from '../components/Header'
+import { useNavigate } from 'react-router-dom'
 
 function BookingForm() {
+    const navigate= useNavigate()
 
     const [bookingDetails,setBookingDetails] = useState({
         name:"",
@@ -24,6 +26,7 @@ function BookingForm() {
 
             if(result.status>=200 && result.status<300){
                 alert("Booking successfull")
+                navigate('/booking')
             }
             else{
                 alert("something went wrong")
