@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 const ParkingPlace = () => {
     const locations = [
@@ -6,21 +8,21 @@ const ParkingPlace = () => {
             id: 1,
             name: "LuLu International Shopping Mall,Kochi",
           
-            bookingLink: "",
+           
             image: "https://www.homesindiamagazine.com/uploaded_images/newstransfer/r4z3jjfx1u645645.jpg", 
         },
         {
             id: 2,
             name: "Center Square Mall,Kochi",
 
-            bookingLink: "",
+           
             image: "https://onlyinyourstate.in/wp-content/uploads/2018/07/Centre-Square-Mall-Kochi.jpg", 
         },
         {
             id: 3,
             name: "Forum Mall, Kochi",
 
-            bookingLink: "",
+           
             image: "https://storage.googleapis.com/realtyplusmag-news-photo/news-photo/111880.Prestige-Group-Debuts-In-Kerala-With-Mall-%E2%80%98Forum-Kochi%E2%80%99-In-Maradu.JPG", 
         },
     ];
@@ -31,7 +33,7 @@ const ParkingPlace = () => {
 
 
 
-            {/* Location Cards */}
+            
             <div className="row mt-5">
                 {locations.map((location) => (
                     <div className="col-md-4 mb-4" key={location.id}>
@@ -44,14 +46,9 @@ const ParkingPlace = () => {
                             <div className="card-body">
                                 <h5 className="card-title">{location.name}</h5>
 
-                                <a
-                                    href=""
-                                    target="_blank"
-
-                                    className="btn btn-danger shadow"
-                                >
-                                    Book Slot
-                                </a>
+                               <Link to={'/BookingForm'}><button className="btn btn-danger">Book Slot</button></Link> 
+                                    
+                               
                             </div>
                         </div>
                     </div>
